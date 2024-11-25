@@ -47,8 +47,8 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = ""
-            GIT_USER_NAME = ""
+            GIT_REPO_NAME = "jenkins-maven-spring-boot-app"
+            GIT_USER_NAME = "Siddeshwarsid"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
